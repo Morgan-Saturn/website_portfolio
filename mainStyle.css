@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-image: url(/assets/background_tylijura-abstract-10169397_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #00C2BA;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-family: "Orbitron", sans-serif;
+}
+nav{
+    font-family: "orbitron", sans-serif;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    float: right;
+    width: auto;
+    font-size: 26pt;
+    cursor: pointer;
+}
+nav a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #00C2BA;
+}
+nav ul{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+nav ul li{
+    box-shadow: 0 0 10px #00C2BA ;
+    border: 2px solid #00C2BA;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    padding: 9px;
+}
+nav ul li:hover{
+    background-color: #00C2BA;
+    box-shadow: 0 0 20px #00C3BA, 0 0 40px #00C4BA;
+}
+nav ul li:hover a{
+    color:black;
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
