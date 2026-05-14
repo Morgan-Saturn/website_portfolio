@@ -1,7 +1,15 @@
 body{
     color: #00C2BA;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 17pt;
+    margin: auto;
+    width: 85%;
+    padding: 15px;
 }
 h1{
     font-family: "Orbitron", sans-serif;
+    font-size: 37pt;
+}
+h2{
+    font-size: 27pt;
 }
