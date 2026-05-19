@@ -1,5 +1,11 @@
+:root {
+    --main-colour: #00C2BA;
+    --secondary-colour: #CE95FB;
+    --purple-contrast: #9765E0;
+}
+
 body{
-    color: #00C2BA;
+    color: var(--main-colour);
     font-family: 'Courier New', Courier, monospace;
     font-size: 17pt;
     margin: auto;
@@ -14,7 +20,7 @@ h2{
     font-size: 27pt;
 }
 hr{
-    border: 2px solid #CE95FB;
+    border: 2px solid var(--secondary-colour);
     width: 98%;
     margin-top: 2.6%;
 }
@@ -31,21 +37,22 @@ hr{
     display: inline-block;
     width: 333px;
     height: 260px;
+    overflow: hidden;
 }
 .bulle_down{
-    margin-top: -2.5%;
+    margin-top: -2.42%;
 }
 .bulle_up{
     transform: rotate(180deg);
     margin-bottom: -4.8%;
 }
-.first_p{
+.timeline_up_p{
     position: absolute;
     margin-top: 39%;
     margin-left: 45%;
     transform: rotate(180deg);
-    color:#CE95FB;
-    font-weight: bold;
+    color:var(--purple-contrast);
+    font-weight: bolder;
 }
 .logo_position{
     position: absolute;
@@ -61,4 +68,29 @@ hr{
     width: 75px;
     height: 55px;
     transform: rotate(180deg);
+}
+.python_logo{
+    width: 50px;
+    height: 50px;
+}
+.timeline_down_p{
+    position: absolute;
+    color: var(--purple-contrast);
+    font-weight: bolder;
+    margin-top: 8.5%;
+    margin-left: 11%;
+
+}
+.down_logo_position{
+    margin-top: 54%;
+    margin-left: 60%;
+}
+.js_logo{
+    width: 90px;
+    height: 50px;
+}
+.php_logo{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
 }
