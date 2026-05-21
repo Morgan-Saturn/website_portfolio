@@ -65,5 +65,6 @@ nav ul li:hover a{
 }
 .photo_pro img:hover{
     box-shadow: 0 0 20px #00C3BA, 0 0 40px #00C4BA;
+    transition: all 0.3s ease;
 }
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');

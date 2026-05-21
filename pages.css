@@ -17,7 +17,8 @@ h1{
     font-size: 37pt;
 }
 h2{
-    font-size: 27pt;
+    font-family: "Orbitron", sans-serif;
+    font-size: 23pt;
 }
 hr{
     border: 2px solid var(--secondary-colour);
