@@ -11,12 +11,14 @@
     <title>Me contacter</title>
 </head>
 <body>
-    <form>
+    <form onsubmit="handleSubmit(event)">
             <h2>Travaillons ensemble.</h2>
             <h1>Contactez-moi !</h1>
                 <input type="text" placeholder="Objet" required>
                 <textarea placeholder="Saisissez votre message ..." required></textarea>
-                <button>Envoyer</button>
+                <button type="submit">Envoyer</button>
     </form><a href="mailto:morgan.tunteva@proton.me?subject=toto&body=blah%20blah%20blaaaaah"></a>
+
+    <script src="/pages/contact_mailto.js"></script>
 </body>
 </html>
