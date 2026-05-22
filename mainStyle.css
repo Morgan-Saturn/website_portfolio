@@ -9,11 +9,17 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #00C2BA;
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr; 
+    grid-template-rows: 6fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "iframe nav"
+        "footer nav"; 
 }
 iframe{
-    height: 100vh;
+    grid-area: iframe;
+    height: 100%;
     width: 100%;
     border: none;
 }
@@ -22,9 +28,9 @@ nav{
     margin-right: 20px;
     margin-top: 20px;
     padding: 15px;
-    float: right;
     width: auto;
     font-size: 26pt;
+    grid-area: nav;
 }
 nav a{
     display: block;
@@ -66,5 +72,17 @@ nav ul li:hover a{
 .photo_pro img:hover{
     box-shadow: 0 0 20px #00C3BA, 0 0 40px #00C4BA;
     transition: all 0.3s ease;
+}
+footer{
+    background-color: #00C3BA;
+    grid-area: footer;
+}
+footer p{
+    font-family: 'Courier New', Courier, monospace;
+    color: #9765E0;
+}
+footer img{
+    width: 70px;
+    height: 70px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
