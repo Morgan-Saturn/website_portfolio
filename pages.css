@@ -95,3 +95,8 @@ hr{
     height: 60px;
     margin-left: 15px;
 }
+.perso{
+    border: 2px solid red;
+    width: 25%;
+    height: 25%;
+}
