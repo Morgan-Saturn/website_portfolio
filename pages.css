@@ -108,3 +108,6 @@ hr{
     width: 100%;
     height: 75%;
 }
+.voir_plus{
+    cursor: pointer;
+}
