@@ -128,6 +128,15 @@ hr{
 .carte_projet h3{
     font-family: "Orbitron", sans-serif;
 }
+.carte_projet .badge{
+    display: flex;
+    gap: 10px;
+}
+.carte_projet .badge img{
+    width: 60px;
+    height: 30px;
+    border-radius: 0%;
+}
 .voir_plus{
     cursor: pointer;
     box-shadow: 0 0 10px var(--main-colour) ;
