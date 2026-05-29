@@ -10,7 +10,7 @@ body{
     background-attachment: fixed;
     color: #00C2BA;
     display: grid;
-    grid-template-columns: 2.5fr 1fr; 
+    grid-template-columns: 3fr 1fr; 
     grid-template-rows: 6fr 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 

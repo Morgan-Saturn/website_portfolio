@@ -96,18 +96,52 @@ hr{
     margin-left: 15px;
 }
 .projets_persos{
+    display: grid;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px 15px;
+}
+.carte_projet{
+    box-shadow: 0 0 10px var(--main-colour) ;
+    border: 2px solid var(--main-colour);
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    overflow: scroll;
 }
-.perso{
-    border: 2px solid red;
-    width: 33%;
-    height: 35%;
+.carte_projet:hover,
+.voir_plus:hover{
+    box-shadow: 0 0 20px #00C3BA, 0 0 40px #00C4BA;
+    transition: all 0.3s ease;
 }
-.perso img{
+.carte_projet img{
     width: 100%;
-    height: 75%;
+    height: auto;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.carte_projet h3{
+    font-family: "Orbitron", sans-serif;
 }
 .voir_plus{
     cursor: pointer;
+    box-shadow: 0 0 10px var(--main-colour) ;
+    border: 2px solid var(--main-colour);
+    border-radius: 15px;
+    margin-bottom: 25px;
+    padding: 9px;
+    transition: all 0.3s ease;
+    font-family: "Orbitron", sans-serif;
+    font-size: 17pt;
+    background-color: black;
+    color: var(--main-colour);
+}
+.voir_plus:hover{
+    color: black;
+    background-color: var(--main-colour);
 }
