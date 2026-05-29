@@ -154,3 +154,16 @@ hr{
     color: black;
     background-color: var(--main-colour);
 }
+.capture_projets{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.capture_projets img{
+    max-width: 100%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.voir_github{
+    cursor: pointer;
+}
