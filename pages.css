@@ -167,3 +167,6 @@ hr{
 .voir_github{
     cursor: pointer;
 }
+.categorie{
+    font-weight: bolder;
+}
