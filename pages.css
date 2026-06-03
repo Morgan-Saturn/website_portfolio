@@ -175,3 +175,10 @@ hr{
 .prez_projet{
     color: var(--secondary-colour);
 }
+@media (max-width: 650px){
+    body{
+        background-color: transparent;
+        backdrop-filter: blur(70px);
+        margin: 0;
+    }
+}
