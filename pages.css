@@ -181,4 +181,9 @@ hr{
         backdrop-filter: blur(70px);
         margin: 0;
     }
+    .projets_persos{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 }
