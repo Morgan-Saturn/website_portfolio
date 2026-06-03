@@ -172,3 +172,6 @@ hr{
 .categorie{
     font-weight: bolder;
 }
+.prez_projet{
+    color: var(--secondary-colour);
+}
