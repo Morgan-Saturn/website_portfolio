@@ -23,56 +23,62 @@ iframe{
     width: 100%;
     border: none;
 }
-nav{
-    font-family: "orbitron", sans-serif;
-    margin-right: 20px;
-    margin-top: 20px;
-    padding: 15px;
-    width: auto;
-    font-size: 26pt;
-    grid-area: nav;
-}
-nav a{
-    display: block;
-    width: 100%;
-    text-decoration: none;
-    color: #00C2BA;
-}
-nav ul{
-    list-style-type: none;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-nav ul li{
-    box-shadow: 0 0 10px #00C2BA ;
-    border: 2px solid #00C2BA;
-    border-radius: 15px;
-    margin-bottom: 25px;
-    padding: 9px;
-    transition: all 0.3s ease;
-}
-nav ul li:hover{
-    background-color: #00C2BA;
-    box-shadow: 0 0 20px #00C3BA, 0 0 40px #00C4BA;
-}
-nav ul li:hover a{
-    color:black;
-}
-.photo_pro img{
-    border-radius: 250px;
-    width: 250px;
-    height: 250px;
-    margin-left: 30%;
-    margin-top: 15%;
-    box-shadow: 0 0 10px #00C2BA ;
-    border: 2px solid #00C2BA;
-    cursor: pointer;
-}
-.photo_pro img:hover{
-    box-shadow: 0 0 20px #00C3BA, 0 0 40px #00C4BA;
-    transition: all 0.3s ease;
+@media (min-width: 650px){
+    #icons{
+        cursor: pointer;
+        display: none;
+    }
+    nav{
+        font-family: "orbitron", sans-serif;
+        margin-right: 20px;
+        margin-top: 20px;
+        padding: 15px;
+        width: auto;
+        font-size: 26pt;
+        grid-area: nav;
+    }
+    nav a{
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: #00C2BA;
+    }
+    nav ul{
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li{
+        box-shadow: 0 0 10px #00C2BA ;
+        border: 2px solid #00C2BA;
+        border-radius: 15px;
+        margin-bottom: 25px;
+        padding: 9px;
+        transition: all 0.3s ease;
+    }
+    nav ul li:hover{
+        background-color: #00C2BA;
+        box-shadow: 0 0 20px #00C3BA, 0 0 40px #00C4BA;
+    }
+    nav ul li:hover a{
+        color:black;
+    }
+    .photo_pro img{
+        border-radius: 250px;
+        width: 250px;
+        height: 250px;
+        margin-left: 30%;
+        margin-top: 15%;
+        box-shadow: 0 0 10px #00C2BA ;
+        border: 2px solid #00C2BA;
+        cursor: pointer;
+    }
+    .photo_pro img:hover{
+        box-shadow: 0 0 20px #00C3BA, 0 0 40px #00C4BA;
+        transition: all 0.3s ease;
+    }
 }
 footer{
     grid-area: footer;
@@ -98,3 +104,63 @@ footer img{
     margin-top: 10px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+@media (max-width: 650px){
+    #icons{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    font-size: 24pt;
+    color: #9765E0;
+    }
+    .active #icons::before{
+        content: "\2715";
+    }
+    #icons::before{
+        content: "\2630";
+    }
+    nav{
+        font-family: "orbitron", sans-serif;
+        margin-right: 50px;
+        margin-top: 20px;
+        padding: 15px;
+        width: auto;
+        font-size: calc(0.5rem + 1.5vw);
+        grid-area: nav;
+    }
+    nav a{
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: black;
+    }
+    nav.active ul{
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        transition: 0.25s;
+    }
+    nav ul{
+        display: none;
+    }
+    nav ul li{
+        border-radius: 15px;
+        margin-bottom: 25px;
+        padding: 9px;
+        background-color: #00C2BA;
+        box-shadow: 0 0 20px #00C3BA, 0 0 40px #00C4BA;
+    }
+    nav ul li a:active{
+        color:#00C2BA;
+        background-color: transparent;
+    }
+    nav ul li:active{
+        background-color: transparent;
+    }
+    .photo_pro img{
+        width: 0;
+        height: 0;
+    }
+}
