@@ -121,18 +121,18 @@ footer img{
     iframe.menu_actif{
         display: none;
     }
-    #icons{
+    #menu_button{
     cursor: pointer;
     position: absolute;
     right: 15px;
     font-size: 24pt;
     color: #9765E0;
     }
-    .active #icons::before{
-        content: "\2715";
-    }
-    #icons::before{
+    #menu_button::before{
         content: "\2630";
+    }
+    #menu_button.bouton_actif::before {
+        content: "\2715";
     }
     nav{
         display: none;
