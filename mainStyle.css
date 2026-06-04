@@ -121,6 +121,9 @@ footer img{
         "iframe nav"
         "footer nav"; 
     }
+    iframe.menu_actif{
+        display: none;
+    }
     #icons{
     cursor: pointer;
     position: absolute;
@@ -141,7 +144,7 @@ footer img{
         padding: 15px;
         width: auto;
         font-size: calc(0.5rem + 1.5vw);
-        grid-area: nav;
+        grid-area: auto;
     }
     nav a{
         display: block;
