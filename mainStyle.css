@@ -114,12 +114,9 @@ footer img{
     background-attachment: fixed;
     color: #00C2BA;
     display: grid;
-    grid-template-columns: 3fr auto; 
-    grid-template-rows: 6fr auto; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-        "iframe nav"
-        "footer nav"; 
+    grid-template-columns: 3fr; 
+    grid-template-rows: 6fr; 
+    gap: 0px 0px;
     }
     iframe.menu_actif{
         display: none;
@@ -138,6 +135,7 @@ footer img{
         content: "\2630";
     }
     nav{
+        display: none;
         font-family: "orbitron", sans-serif;
         margin-right: 50px;
         margin-top: 20px;
@@ -159,6 +157,9 @@ footer img{
         flex-direction: column;
         text-align: center;
         transition: 0.25s;
+    }
+    nav.active{
+        display: block;
     }
     nav ul{
         display: none;
