@@ -57,3 +57,8 @@ button:hover{
     cursor: pointer;
     color: black;
 }
+@media (max-width: 650px){
+    form{
+        background-color: transparent;
+    }
+}
