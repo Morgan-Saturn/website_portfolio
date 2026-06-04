@@ -136,6 +136,10 @@ hr{
     height: 30px;
     border-radius: 0%;
 }
+.descente_bouton{
+    display: block;
+    margin-top: auto;
+}
 .voir_plus,
 .voir_github{
     cursor: pointer;
